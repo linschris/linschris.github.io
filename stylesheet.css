@@ -1,5 +1,5 @@
 :root {
-    /* Spacing for between elements */
+    /* 8-grid spacing for between elements */
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 24px;
@@ -128,14 +128,22 @@ header > *:not(#bg-container) {
     gap: var(--spacing-sm);
 }
 
+.project-card-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .project-card-title:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 .project-card-img {
-    width: 300px;
+    max-height: 200px;
+    max-width: 300px;
+    aspect-ratio: 16 / 9;
     object-position: center top;
+    object-fit: cover;
     border-radius: 0.25rem;
 }
 
