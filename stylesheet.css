@@ -129,7 +129,7 @@ header > *:not(#bg-container) {
 }
 
 .project-card-title a {
-    color: inherit;
+    color: var(--red-gray);
     text-decoration: none;
 }
 
